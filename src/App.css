@@ -13,6 +13,33 @@
   }
 }
 
+/* Default styles for the submit button */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #fffbfb;
+  border: 2px solid transparent;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  
+  transition: border-color 0.3s ease;
+}
+/* Style the submit button when it is focused */
+.submit-button:focus {
+  border-color: black;
+  outline: none; /* Remove the default outline */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px */
+  .submit-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
